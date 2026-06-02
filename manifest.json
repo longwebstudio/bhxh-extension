@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tự động điền và Lưu kết quả BHXH",
+  "version": "1.0",
+  "description": "Tự động lấy tham số từ URL điền vào form BHXH và bắt kết quả gửi về API",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://baohiemxahoi.gov.vn/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
